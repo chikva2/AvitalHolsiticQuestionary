@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שאלון של הספורט הטיפולי</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>שאלון של הספורט הטיפולי</h1>
+    
+    <form action="https://formspree.io/f/mpwarypd" method="POST">
+        <h2>הריון ולידה</h2>
+        
+        <div class="question">
+            <label for="pregnancy-birth">ספרו לי קצת על ההיריון והלידה, איך היה?</label>
+            <textarea id="pregnancy-birth" name="pregnancy-birth"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="birth-week">נולדה בשבוע:</label>
+            <input type="text" id="birth-week" name="birth-week">
+        </div>
+        
+        <div class="question">
+            <label for="birth-weight">משקל הלידה:</label>
+            <input type="text" id="birth-weight" name="birth-weight">
+        </div>
+        
+        <div class="question">
+            <label for="current-weight">משקל כיום:</label>
+            <input type="text" id="current-weight" name="current-weight">
+        </div>
+        
+        <div class="question">
+            <label for="hospital-release">האם היה שחרור במועד מהבית חולים לאחר הלידה? אם לא, זה מזמין אותנו לשאול עוד שאלות – למה, מה קרה?</label>
+            <textarea id="hospital-release" name="hospital-release"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="general-health">האם היא בריאה בדרך כלל?</label>
+            <input type="text" id="general-health" name="general-health">
+        </div>
+        
+        <div class="question">
+            <label for="baby-temperament">איזה מין תינוקת היא הייתה – רגועה, שקטה, ישנה ונינוחה או להיפך – תינוקת שהטיפול בה היה תובעני וקשה?</label>
+            <textarea id="baby-temperament" name="baby-temperament"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="parent-experience">מה הייתה החוויה שלכם כהורים לנוכח ההתנהגות הזו?</label>
+            <textarea id="parent-experience" name="parent-experience"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="current-behavior">איך היא היום?</label>
+            <textarea id="current-behavior" name="current-behavior"></textarea>
+        </div>
+        
+        <h2>שלבי ההתפתחות</h2>
+        
+        <div class="question">
+            <label for="fetal-position">האם שמרה על שכיבה עוברית?</label>
+            <input type="text" id="fetal-position" name="fetal-position">
+        </div>
+        
+        <div class="question">
+            <label for="lying-position">שכבה בעיקר על הבטן או על הגב?</label>
+            <input type="text" id="lying-position" name="lying-position">
+        </div>
+        
+        <div class="question">
+            <label for="head-lift">מתי הרימה ראש?</label>
+            <input type="text" id="head-lift" name="head-lift">
+        </div>
+        
+        <div class="question">
+            <label for="rolling-age">באיזה גיל התהפכה?</label>
+            <input type="text" id="rolling-age" name="rolling-age">
+        </div>
+        
+        <div class="question">
+            <label for="object-to-mouth">האם שלחה יד לחפצים ומביאה אותם אל הפה? מאיזה גיל?</label>
+            <input type="text" id="object-to-mouth" name="object-to-mouth">
+        </div>
+        
+        <div class="question">
+            <label for="pivot-turn">מתי עשתה סיבוב ציר?</label>
+            <input type="text" id="pivot-turn" name="pivot-turn">
+        </div>
+        
+        <div class="question">
+            <label for="crawling-start">מתי התחילה לזחול?</label>
+            <input type="text" id="crawling-start" name="crawling-start">
+        </div>
+        
+        <div class="question">
+            <label for="six-point-position">ממתי עלתה על שש וכמה זמן החזיקה בעמידה זו?</label>
+            <input type="text" id="six-point-position" name="six-point-position">
+        </div>
+        
+        <div class="question">
+            <label for="sitting">האם התיישבה ואם לא – האם הייתם מושיבים אותה על הרצפה? על כיסא אוכל?</label>
+            <textarea id="sitting" name="sitting"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="pacifier">האם היה לה מוצץ? אם כן – האם ידעה לקחת אותו לבד ולהכניסו לפה? אם כן – ממתי?</label>
+            <textarea id="pacifier" name="pacifier"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="transition-object">האם היה לה חפץ מעבר? אם כן – מהו?</label>
+            <input type="text" id="transition-object" name="transition-object">
+        </div>
+        
+        <h2>מסגרת חינוכית</h2>
+        
+        <div class="question">
+            <label for="educational-framework">האם היא נמצאת במסגרת חינוכית? אם כן:</label>
+            <textarea id="educational-framework" name="educational-framework"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="framework-start-age">מאיזה גיל?</label>
+            <input type="text" id="framework-start-age" name="framework-start-age">
+        </div>
+        
+        <h2>תפקודי יומיום</h2>
+        
+        <div class="question">
+            <label for="daily-function">אם היא בגן\בית ספר – נשאל גם על התפקוד בגן\בית ספר – אוכל, סדר יום, שינה.</label>
+            <textarea id="daily-function" name="daily-function"></textarea>
+        </div>
+        
+        <h3>אוכל</h3>
+        
+        <div class="question">
+            <label for="breastfeeding">האם ינקה?</label>
+            <input type="text" id="breastfeeding" name="breastfeeding">
+        </div>
+        
+        <div class="question">
+            <label for="bottle-feeding">אם כן – האם קיבלה גם בקבוק?</label>
+            <input type="text" id="bottle-feeding" name="bottle-feeding">
+        </div>
+        
+        <div class="question">
+            <label for="additional-food">האם אכלה דברים נוספים? אם כן – מתי התחילה לאכול אוכל מרוסק? איך היא הסתדרה עם אוכל זה? – האם התעורר רפלקס הקאה, האם התקשתה לבלוע, האם יש טעמים שלא אהבה.</label>
+            <textarea id="additional-food" name="additional-food"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="solid-food">האם אכלה גם מוצקים: מה היא אכלה? מתי התחילה לאכול אוכל זה, איך היא הסתדרה איתו, האם התעורר רפלקס הקאה, האם התקשתה לבלוע, האם יש טעמים שלא אהבה?</label>
+            <textarea id="solid-food" name="solid-food"></textarea>
+        </div>
+        
+        <h3>יציאות</h3>
+        
+        <div class="question">
+            <label for="bowel-movements">כמה פעמים ביום היא עושה קקי?</label>
+            <input type="text" id="bowel-movements" name="bowel-movements">
+        </div>
+        
+        <div class="question">
+            <label for="regular-times">האם יש לה זמנים קבועים?</label>
+            <input type="text" id="regular-times" name="regular-times">
+        </div>
+        
+        <div class="question">
+            <label for="bowel-changes">האם זה שונה מהיציאות כשהיא הייתה קטנה יותר? אם כן – כמה יציאות היו לה כשהייתה יותר קטנה.</label>
+            <textarea id="bowel-changes" name="bowel-changes"></textarea>
+        </div>
+        
+        <h3>סדר יום</h3>
+        
+        <div class="question">
+            <label for="daily-routine">ספרו לי על סדר היום שלה – שעות שינה, משחק, אוכל.</label>
+            <textarea id="daily-routine" name="daily-routine"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="play-activities">מה היא עושה בשעות המשחק?</label>
+            <textarea id="play-activities" name="play-activities"></textarea>
+        </div>
+        
+        <div class="question">
+            <label for="night-sleep">האם היא ישנה טוב בלילה?</label>
+            <input type="text" id="night-sleep" name="night-sleep">
+        </div>
+        
+        <div class="question">
+            <label for="sensitivities">האם יש רגישויות (טקטילית, שמיעתית, חזותית – אורות, וסטיבולרית).</label>
+            <textarea id="sensitivities" name="sensitivities"></textarea>
+        </div>
+        
+        <h3>אלרגיות</h3>
+        
+        <div class="question">
+            <label for="allergies">האם יש אלרגיות ידועות?</label>
+            <textarea id="allergies" name="allergies"></textarea>
+        </div>
+        
+        <input type="hidden" name="_subject" value="New submission: שאלון של הספורט הטיפולי">
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="submit" value="שלח טופס">
+    </form>
+</body>
+</html>
